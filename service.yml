@@ -1,7 +1,7 @@
 name: postgis
 type: db
 from: postgres
-title: PostGis
+title: PostGIS
 
 options:
 - version: '18'
