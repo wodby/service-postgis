@@ -1,0 +1,13 @@
+name: postgis
+type: db
+from: postgres
+title: PostGis
+
+options:
+- version: '18'
+  tag: '18-postgis'
+
+labels:
+- postgis
+- postgres
+- postgresql
