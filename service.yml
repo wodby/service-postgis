@@ -1,5 +1,6 @@
 name: postgis
 type: db
+icon: postgis
 from: postgres
 title: PostGIS
 
