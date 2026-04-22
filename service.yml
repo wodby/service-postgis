@@ -6,7 +6,7 @@ title: PostGIS
 
 options:
 - version: '18'
-  tag: '18-postgis'
+  tag: '18-postgis-1.40.0'
 
 labels:
 - postgis
