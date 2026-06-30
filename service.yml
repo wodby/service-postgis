@@ -2,6 +2,7 @@ name: postgis
 type: db
 icon: postgis
 from: postgres
+fromVersion: "^1.0.0"
 title: PostGIS
 
 options:
