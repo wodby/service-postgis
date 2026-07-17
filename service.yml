@@ -1,10 +1,9 @@
 name: postgis
 type: db
-icon: postgis
 from: postgres
 fromVersionConstraint: "^1.0.0"
 fromVersion: "1.0.1"
-title: PostGIS
+title: PostgreSQL (PostGIS)
 
 options:
 - version: '18'
