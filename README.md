@@ -1,12 +1,18 @@
-# PostgreSQL (PostGIS) service for Wodby
+# PostgreSQL (PostGIS) service for Kubernetes on Wodby
 
-Use PostgreSQL (PostGIS) as a reusable component in applications managed by
-Wodby. This repository contains the service manifests and referenced files used
-by the public PostgreSQL (PostGIS) service in the Wodby catalog.
+Run PostgreSQL (PostGIS) as a database for Kubernetes applications managed by
+Wodby.
 
-- [PostgreSQL (PostGIS) service in the Wodby catalog](https://wodby.com/services/postgis)
+This repository defines the Wodby service manifests and operational
+configuration for PostgreSQL (PostGIS).
+
+- [Browse Wodby services](https://wodby.com/services)
 - [Wodby service documentation](https://wodby.com/docs/2.0/services/)
 - [Service manifest reference](https://wodby.com/docs/2.0/services/template/)
+
+## Wodby stacks using this service
+
+- [PostGIS application stack](https://github.com/wodby/stack-postgis)
 
 ## Service overview
 
@@ -19,38 +25,28 @@ by the public PostgreSQL (PostGIS) service in the Wodby catalog.
 
 ## Use this service
 
-A service is a reusable component and does not deploy by itself. Add the public
-catalog service to a stack, configure its required links and settings, publish
-the stack, and then create or upgrade an app instance.
+Use this service through [PostGIS application stack](https://github.com/wodby/stack-postgis), or reference `postgis` from a
+custom Wodby stack.
 
-To maintain your own version of this service:
+A service is a reusable component and does not deploy by itself. The stack
+defines its links, settings, versions, resources, and relationship to the rest
+of the application.
+
+## Maintain a custom version
 
 1. Fork this repository.
-2. Edit the service manifest and any files it references.
-3. Import the repository as a
-   [Git-backed service](https://wodby.com/docs/2.0/services/create/#create-a-git-backed-service).
-4. Reference `postgis` from your stack manifest.
-
-Wodby imports the manifest and referenced files from the selected Git branch or
-tag and creates a new service revision when the Git-backed service is updated.
-
-## Customize the service
-
-Common changes include adjusting versions, images, Helm chart settings, build
-inputs, environment variables, links, storage, resources, and operational
-workflows supported by the manifest.
+2. Edit the service manifest and referenced files.
+3. Import the repository as a [Git-backed service](https://wodby.com/docs/2.0/services/create/#create-a-git-backed-service).
+4. Reference the service from a stack manifest.
 
 Keep service, workload, container, endpoint, link, volume, config, and
 derivative names stable unless dependent stacks and app-level overrides are
-updated at the same time. These names are part of the contract consumed by
-downstream manifests.
+updated at the same time.
 
-Validate customized manifests with the Wodby CLI before importing them:
+Validate the manifests with:
 
 ```bash
 wodby service validate-manifest service.yml --org <org-id>
 ```
 
-See the [service manifest reference](https://wodby.com/docs/2.0/services/template/)
-for every supported field and the [managed services
-index](https://github.com/wodby/services) for more service examples.
+See the [service manifest reference](https://wodby.com/docs/2.0/services/template/) and the [managed services index](https://github.com/wodby/services).
