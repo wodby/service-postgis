@@ -7,7 +7,7 @@ title: PostgreSQL (PostGIS)
 
 options:
 - version: '18'
-  tag: '18-postgis-1.40.0'
+  tag: '18-postgis-1.43.1'
 labels:
 - postgis
 - postgres
