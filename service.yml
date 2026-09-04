@@ -2,7 +2,7 @@ name: postgis
 type: db
 from: postgres
 fromVersionConstraint: "^1.0.0"
-fromVersion: "1.1.2"
+fromVersion: "1.2.0"
 title: PostgreSQL (PostGIS)
 
 options:
