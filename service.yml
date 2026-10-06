@@ -1,6 +1,7 @@
 name: postgis
 type: db
 from: postgres
+guidance: GUIDANCE.md
 fromVersionConstraint: "^1.0.0"
 fromVersion: "1.2.3"
 title: PostgreSQL (PostGIS)
