@@ -8,7 +8,10 @@ title: PostgreSQL (PostGIS)
 
 options:
 - version: '18'
-  tag: 18-postgis-r0
+  tag: 18-postgis-r1
+- version: '17'
+  tag: 17-postgis-r1
+  eol: '2029-11-08T00:00:00+00:00'
 labels:
 - postgis
 - postgres
