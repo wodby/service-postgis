@@ -21,7 +21,7 @@ configuration for PostgreSQL (PostGIS).
 | Service name | `postgis` |
 | Type | Database |
 | Inherits from | [`postgres`](https://github.com/wodby/service-postgres) with version constraint `^1.0.0` |
-| Versions | `18` by default |
+| Versions | `18` by default; `17` supported |
 
 ## Use this service
 
