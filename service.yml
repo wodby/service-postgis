@@ -8,7 +8,7 @@ title: PostgreSQL (PostGIS)
 
 options:
 - version: '18'
-  tag: 18-postgis-r0
+  tag: 18-postgis-r1
 labels:
 - postgis
 - postgres
